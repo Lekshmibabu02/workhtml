@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show Form Values</title>
+</head>
+<body>
+  <h2>Student Information Form</h2>
+
+  
+  <form>
+    <label>Name:</label>
+    <input type="text" id="name" ><br><br>
+
+    <label>Age:</label>
+    <input type="number" id="age"><br><br>
+
+    <label>Email:</label>
+    <input type="email" id="email"><br><br>
+
+  </form>
+  <button onclick="showData()">Submit</button>
+  
+  <h3>Entered Details:</h3>
+  <p id="output"></p>
+
+  <script>
+    function showData() {
+      
+      let name = document.getElementById("name").value;
+      let age = document.getElementById("age").value;
+      let email = document.getElementById("email").value;
+
+      
+      document.getElementById("output").innerHTML =
+        "Name: " + name + "<br>" +
+        "Age: " + age + "<br>" +
+        "Email: " + email + "<br>";
+    }
+  </script>
+</body>
+</html>
