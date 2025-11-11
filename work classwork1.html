@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show Paragraph Content</title>
+</head>
+<body>
+
+  
+  <p id="para">We are a New Zealand Co-operative made up of everyday good people who work together to do good things with dairy. Good things with the land we work on and good things for the people that our products end up with. We are passionate about doing amazing things with dairy</p>
+
+  
+  <button onclick="showContent()">click</button>
+  <div id="demo"></div>
+  <script>
+    function showContent() {
+      
+       let text=document.getElementById("para").innerHTML;
+      document.getElementById("demo").innerHTML=text;
+
+      }
+  </script>
+
+</body>
+</html>
