@@ -2,16 +2,18 @@
 <html>
 <body>
 
-<!-- Button -->
-<button onclick="showImage()">Show Image</button>
+<img id="img1" src="https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?w=740&q=80" width="200">
 
-<!-- Where image will appear -->
-<div id="demo"></div>
+<br><br>
+
+<button onclick="showSrc()">Show Image Source</button>
+
+<p id="output"></p>
 
 <script>
-function showImage() {
-  document.getElementById("demo").innerHTML = 
-    "<img src='https://www.w3schools.com/html/img_chania.jpg' width='200'>";
+function showSrc() {
+  document.getElementById("output").innerText =
+    document.getElementById("img1").src;
 }
 </script>
 
